@@ -1,0 +1,24 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 14
+skinparam class {
+  BackgroundColor White
+  BorderColor Black
+}
+"Cliente" --> "Pedido" : realiza
+"Pedido" --> "Producto" : contiene
+"Pedido" --> "Mesa" : se_consumen_en
+"Empleado" --> "Pedido" : atiende
+"Pedido" --> "EstadoPedido" : tiene
+
+"Mesa" --> "EstadoMesa" : se_encuentra_en
+"Mesa" --> "Silla" : posee
+"Cocinero" --> "Cocina" : trabaja_en
+"Camarero" --> "Barra" : sirve_en
+"Cocina" --> "Pedido" : prepara
+"Barra" --> "Pedido" : entrega
+"Camarero" --|> "Empleado"
+"Cocinero" --|> "Empleado"
+
+@enduml
