@@ -1,7 +1,7 @@
 @startuml
-title Modelo de Dominio (Interpretación UML)
+title Modelo de Dominio (Diagrama de Clases)
 
-' Definición de Clases
+
 class Usuario
 class Rol
 class Permiso
@@ -10,14 +10,18 @@ class Vista
 class Esquema
 class BBDD
 class Tabla
-class Constrain
+class Trigger
+class Registro
+class Atributo
+class TipoDeDato
 class ForeignKey
 class PrimaryKey
 class Acciones
-class Atributo
-class TipoDeDato
-class Registro
-class Trigger
+class Constrain
+
+
+
+
 
 
 
